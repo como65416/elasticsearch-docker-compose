@@ -9,3 +9,10 @@
 - https://github.com/medcl/elasticsearch-analysis-ik/releases
 
 - https://github.com/medcl/elasticsearch-analysis-stconvert/releases
+
+如果是只要測試使用沒有要走 https 的話
+
+需要將 `xpack.security.http.ssl.enabled` 改為 false (docker-composer.yaml)
+
+並且將相關連線的 https 改成 http
+
